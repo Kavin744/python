@@ -1,0 +1,114 @@
+@@ -7,7 +7,7 @@ for word in words:
+    vowel_count = sum(1 for letter in word if letter.lower() in 'aeiou')
+    print(f"{word}: {vowel_count}")
+
+*******************************************************
+****************************************************
+
+2. Calculate average 
+
+@@ -22,7 +22,7 @@ total_age = sum(age for _, age in people)
+avg_age = total_age / len(people)
+print(f"Average age: {avg_age}")
+
+*******************************************************
+****************************************************
+
+3. Find common elements in two lists:
+
+@@ -31,23 +31,23 @@ list2 = input("Enter elements of list 2 separated by spaces: ").split()
+common = [elem for elem in list1 if elem in list2]
+print("Common elements:", common)
+
+*******************************************************
+****************************************************
+
+4. Convert Celsius to Fahrenheit:
+
+celsius_temperatures = [float(temp) for temp in input("Enter temperatures in Celsius separated by spaces: ").split()]
+fahrenheit = [(temp * 9/5) + 32 for temp in celsius_temperatures]
+print("Temperatures in Fahrenheit:", fahrenheit)
+
+*******************************************************
+****************************************************
+
+5. Remove duplicate names:
+
+names = input("Enter names separated by spaces: ").split()
+unique_names = list(set(names))
+print("Updated list:", unique_names)
+
+*******************************************************
+****************************************************
+
+Medium Level:
+
+@@ -63,7 +63,7 @@ for _ in range(n):
+people_dict = {name: age for name, age in people}
+print("Dictionary:", people_dict)
+
+*******************************************************
+****************************************************
+
+7. Sort list of tuples based on total score:
+
+@@ -79,7 +79,7 @@ for _ in range(n):
+sorted_students = sorted(students, key=lambda x: sum(x[1]), reverse=True)
+print("Sorted students:", sorted_students)
+
+*******************************************************
+****************************************************
+
+8. Compare two dates:
+
+@@ -93,7 +93,7 @@ elif date1 > date2:
+else:
+    print("Date 1 is the same as Date 2")
+
+*******************************************************
+****************************************************
+
+9. Concatenate two tuples:
+
+@@ -102,7 +102,7 @@ tuple2 = tuple(input("Enter tuple 2 elements separated by space: ").split())
+concatenated_tuple = tuple1 + tuple2
+print("Concatenated tuple:", concatenated_tuple)
+
+*******************************************************
+****************************************************
+
+10. Slice a tuple:
+
+@@ -111,7 +111,7 @@ middle_index = len(months) // 2
+first_half_months = months[:middle_index]
+print("First half of the months:", first_half_months)
+
+*******************************************************
+****************************************************
+
+High level:
+
+@@ -134,7 +134,7 @@ for instrument, name in zip([instrument1, instrument2, instrument3], ["Instrumen
+max_growth_rate = max(growth_rates, key=lambda x: x[1])
+print(f"The instrument with the highest growth rate ({max_growth_rate[1]:.2f}%) is {max_growth_rate[0]}.")
+
+*******************************************************
+****************************************************
+
+12. Implement an inventory management system:
+
+@@ -151,7 +151,7 @@ if total_quantity > 0:
+else:
+    print(f"Product {product_id} is out of stock.")
+
+*******************************************************
+****************************************************
+
+13. snippet where you can input the comments and keywords:
+
+@@ -179,5 +179,5 @@ sorted_keywords = sorted(keyword_freq, key=keyword_freq.get, reverse=True)
+print("Top trending topics based on user comments:")
+print(sorted_keywords)
+
+*******************************************************
+****************************************************
